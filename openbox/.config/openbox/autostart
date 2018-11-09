@@ -1,0 +1,4 @@
+xbindkeys &
+dunst &
+mpd &
+compton --config ~/.config/compton.conf &
