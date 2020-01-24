@@ -300,7 +300,8 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty -d 0 0</command>
+                  <!-- <command>alacritty -d 0 0</command>-->
+        <command>lxterminal</command>
       </action>
     </keybind>
     <keybind key="W-A">
