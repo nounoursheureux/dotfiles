@@ -6,6 +6,7 @@ Plug 'lervag/vimtex'
 Plug 'itchyny/lightline.vim'
 Plug 'flrnd/plastic.vim'
 Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 syntax on
