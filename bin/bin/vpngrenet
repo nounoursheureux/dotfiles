@@ -1,0 +1,2 @@
+#!/bin/sh
+openconnect --authgroup="Etudiants de Grenoble INP" --user=barbierw vpn.grenet.fr

@@ -1,0 +1,13 @@
+#!/bin/bash
+for compteur in $(seq 1 3600)
+do
+    sleep 1
+    echo -ne "\033[$()G"
+    if [ $compteur -gt 59 ]
+    then
+        let min=compteur/60 # division entière
+        let sec=compteur%60 # reste ou modulo
+        echo -n "$min m $sec s "
+    else echo -n "$compteur s "
+    fi
+done
