@@ -11,6 +11,8 @@ call plug#end()
 
 syntax on
 set number
+set path+=**
+set wildmenu
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -24,17 +26,20 @@ set smartcase
 set laststatus=2
 set background=dark
 set ttimeoutlen=50
+set showcmd
 filetype plugin on
 colorscheme plastic
 " let g:lightline = {'colorscheme': 'plastic'}
-"
-"
+
+let g:tex_flavor='latex'
+let g:vimtex_view_method='general'
+
+let g:sneak#label=1
+
+autocmd FileType cpp setlocal commentstring=//\ %s
+
+autocmd BufNewFile,BufRead *.s set syntax=nasm
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-
-let g:sneak#label=1
